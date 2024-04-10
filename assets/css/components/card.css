@@ -1,0 +1,104 @@
+/*-----------------------------------*\
+  #card.css
+\*-----------------------------------*/
+
+/**
+ * copyright 2022 codewithsadee
+ */
+
+
+
+
+
+ .card {
+  box-shadow: 0 0 0 var(--jet);
+  display: flex;
+  transition: var(--transition-1);
+  padding: 30px; /* Ajuste el padding para todas las tarjetas */
+  border: 2px solid var(--jet); /* Asegurar que todas las tarjetas tengan el mismo borde */
+}
+
+.card-lg .card-media {
+  width: 100px; /* Tamaño de la imagen para tarjetas grandes */
+  height: 100px;
+}
+
+.card-md .card-media {
+  width: 70px; /* Tamaño de la imagen para tarjetas medianas */
+  height: 70px;
+}
+
+.card-sm .card-media {
+  width: 50px; /* Tamaño de la imagen para tarjetas pequeñas */
+  height: 50px;
+}
+
+.card-media {
+  background-color: var(--white);
+  color: var(--jet);
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+
+/* Estilo de las tarjetas al hacer hover o focus */
+.card:hover, .card:focus-within {
+  box-shadow: 5px 5px 0 var(--jet); /* Ajuste del efecto de sombra */
+}
+
+.card-lg:hover .card-media, .card-lg:focus-within .card-media {
+  width: 100px; /* Ajuste del tamaño de la imagen al hacer hover/focus */
+  height: 100px;
+}
+
+.card-md:hover .card-media, .card-md:focus-within .card-media {
+  width: 70px;
+  height: 70px;
+}
+
+.card-sm:hover .card-media, .card-sm:focus-within .card-media {
+  width: 50px;
+  height: 50px;
+}
+
+/* Ajuste del tamaño de la tarjeta para tarjetas pequeñas y medianas al hacer hover/focus */
+.card-lg:hover, .card-lg:focus-within,
+.card-md:hover, .card-md:focus-within {
+  box-shadow: 5px 5px 0 var(--jet);
+}
+
+/* Ajuste del tamaño de la tarjeta para tarjetas pequeñas al hacer hover/focus */
+.card-sm:hover, .card-sm:focus-within {
+  box-shadow: 3px 3px 0 var(--jet);
+}
+
+
+
+
+/**
+ * RESPONSIVE CONTAINER QUERY
+ */
+
+.card-container { container-type: inline-size; }
+
+@container (min-width: 500px) {
+  .card-lg,
+  .card-md { flex-direction: row; }
+}
+
+
+
+/**
+ * RESPONSIVE MEDIA QUERY
+ */
+
+@media (min-width: 768px) {
+
+  .card-lg { padding: 35px; }
+
+  .card-md { padding: 40px; }
+
+  .card-sm { padding: 15px; }
+
+}
