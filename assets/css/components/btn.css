@@ -39,9 +39,9 @@
 
 .btn-tertiary {
   color: var(--jet);
-  background-color: var(--maximum-yellow-red);
-  --shadow-color: var(--orange-red);
-  --hover-bg: var(--orange-red);
+  background-color: #81ADAE;
+  --shadow-color:  var(--jet);
+  --hover-bg:  var(--jet);
   --hover-shadow-color: var(--maximum-yellow-red);
 }
 

@@ -36,7 +36,7 @@
 \*-----------------------------------*/
 
 .contact {
-  background-color: var(--jet);
+  background-color: #ECDEC4;
   padding-block-start: calc(var(--section-padding) + 60px);
 }
 
@@ -91,15 +91,15 @@ textarea {
 .contact-list .item-icon ion-icon { font-size: 2.5rem; }
 
 .contact .label-lg {
-  color: var(--white_a80);
+  color: black;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: var(--fw-400);
-  margin-block-end: 5px;
+  margin-block-end: 10px;
 }
 
 .contact .body-lg {
-  color: var(--white);
+  color: black;
   word-break: break-all;
 }
 
