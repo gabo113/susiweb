@@ -156,7 +156,7 @@ html {
 }
 
 body {
-  background-color: #EEE5DC;
+  background-color: #ECDEC4;
   color: var(--davys-gray);
   font-size: 1.6rem;
   line-height: 1.5;
@@ -374,6 +374,7 @@ body.loaded { overflow: visible; }
 }
 
 .navbar-link:is(:hover, :focus-visible, .active) { color: var(--orange-red); }
+
 
 
 
