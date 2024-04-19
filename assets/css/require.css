@@ -384,8 +384,8 @@ body.loaded { overflow: visible; }
 \*-----------------------------------*/
 
 .footer {
-  background-color: var(--jet);
-  color: var(--white_a75);
+  background-color: white;
+  color: black;
   border-block-start: 1px solid var(--white_a10);
   padding-block: 18px;
 }
